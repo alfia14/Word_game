@@ -1,0 +1,103 @@
+/* Hangman.css */
+
+/* Default styles */
+.Hangman-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.Hangman {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .Hangman-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: rgb(242, 242, 247);
+  }
+  
+  .Hangman-guessed-wrong {
+    margin-right: 10px;
+  }
+  
+  .Hangman-image img {
+    text-align: center;
+  }
+  
+  .Hangman-hint {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .Hangman-word {
+    text-align: center;
+  }
+  
+  .Hangman-status {
+    text-align: center;
+    color: yellow;
+    margin-top: 4px;
+  }
+  
+  .Hangman-reset-container {
+    text-align: center;
+  }
+  
+  .Hangman-reset {
+    cursor: pointer;
+  }
+  
+  /* Media queries for responsiveness */
+  
+  @media (max-width: 768px) {
+    .Hangman-guessed-wrong {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    
+    .Hangman-image img {
+      max-width: 80%;
+    }
+    
+    .Hangman-hint {
+      font-size: 16px;
+    }
+    
+    .Hangman-word {
+      font-size: 18px;
+    }
+    
+    .Hangman-status {
+      font-size: 16px;
+    }
+    
+    .Hangman-reset {
+      font-size: 16px;
+    }
+  }
+  
+  @media () {
+    .Hangman-hint {
+      font-size: 14px;
+    }
+    
+    .Hangman-word {
+      font-size: 16px;
+    }
+    
+    .Hangman-status {
+      font-size: 14px;
+    }
+    
+    .Hangman-reset {
+      font-size: 5px;
+    }
+  }
+  
